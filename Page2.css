@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
 :root {
-  --bg-dark: #0d0d1a;
-  --neon: #00fff7;
-  --pink: #ff007f;
+  --bg-dark: #000000;
+  --neon: #00ffff;
+  --pink: #00cccc;
   --glass: rgba(255, 255, 255, 0.05);
 }
 
@@ -22,11 +22,11 @@ body {
   height: 200%;
   top: -50%;
   left: -50%;
-  background: linear-gradient(45deg, var(--neon), var(--pink), #7000ff, #00ffa1);
+  background: linear-gradient(45deg, #00ffff, #00cccc, #330066, #0000ff);
   background-size: 400% 400%;
-  animation: gradientMove 15s ease infinite;
+  animation: gradientMove 20s ease infinite;
   z-index: -1;
-  filter: blur(100px);
+  filter: blur(120px);
 }
 @keyframes gradientMove {
   0% {background-position:0% 50%;}
@@ -41,8 +41,8 @@ body {
   padding: 20px 50px;
   position: sticky;
   top: 0;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(12px);
   z-index: 10;
 }
 .nav .logo { color: var(--neon); font-size: 24px; }
@@ -71,7 +71,7 @@ body {
 }
 .hero-content p {
   margin: 20px 0;
-  color: #ddd;
+  color: #ccc;
 }
 .btn {
   display: inline-block;
@@ -145,5 +145,5 @@ body {
 .footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
 }
